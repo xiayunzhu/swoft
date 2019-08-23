@@ -48,6 +48,6 @@ class Goods extends BaseMigration
      */
     public function down(): void
     {
-        $this->schema->dropIfExists('messages');
+        $this->schema->dropIfExists('goods');
     }
 }
