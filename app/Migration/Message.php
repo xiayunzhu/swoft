@@ -16,7 +16,7 @@ use Swoft\Devtool\Migration\Migration as BaseMigration;
  *
  * @since 2.0
  *
- * @Migration(time=20190627225525, pool="db3.pool")
+ * @Migration(time=20190627225525)
  */
 class Message extends BaseMigration
 {
