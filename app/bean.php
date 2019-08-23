@@ -58,15 +58,15 @@ return [
     ],
     'db'                => [
         'class'    => Database::class,
-        'dsn'      => 'mysql:dbname=test;host=127.0.0.1',
+        'dsn'      => 'mysql:dbname=test;host=localhost',
         'username' => 'root',
-        'password' => 'swoft123456',
+        'password' => '123456',
     ],
     'db2'               => [
         'class'      => Database::class,
-        'dsn'        => 'mysql:dbname=test2;host=127.0.0.1',
+        'dsn'        => 'mysql:dbname=test;host=localhost',
         'username'   => 'root',
-        'password'   => 'swoft123456',
+        'password'   => '123456',
         'dbSelector' => bean(DbSelector::class)
     ],
     'db2.pool'          => [
