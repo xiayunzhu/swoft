@@ -24,7 +24,7 @@ class GoodController
      * 验证TestValidator验证器中的所有已定义字段
      *
      * @RequestMapping()
-     * @Validate(validator="IIndexValidator")
+     * @Validate(validator="Goods/IndexValidator")
      * @param Request $request
      *
      * @return array|object|null
