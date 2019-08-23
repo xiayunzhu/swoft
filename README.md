@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
     <a href="https://github.com/swoft-cloud/swoft" target="_blank">
         <img src="http://qiniu.daydaygo.top/swoft-logo.png?imageView2/2/w/300" alt="swoft"/>
@@ -101,3 +102,6 @@ composer create-project swoft/swoft swoft
 ## License
 
 Swoft is an open-source software licensed under the [LICENSE](LICENSE)
+=======
+# swoft
+>>>>>>> c1bdde419a6dfe9023a4aea61229a5d579ddd455
