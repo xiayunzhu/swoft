@@ -30,7 +30,7 @@ class Goods extends BaseMigration
     public function up(): void
     {
         //
-        $this->schema->createIfNotExists('messages', function (Blueprint $blueprint) {
+        $this->schema->createIfNotExists('goods', function (Blueprint $blueprint) {
             $blueprint->increments('id')->comment('商品ID');
             $blueprint->text('content')->commnet('宝贝描述');
             $blueprint->integer('price')->comment('价格');
