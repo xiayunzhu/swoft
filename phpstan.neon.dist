@@ -40,7 +40,7 @@ parameters:
             path: %currentWorkingDirectory%/app/Task/Task/SyncTask.php
             message: '#^Method App\\Task\\Task\\SyncTask::testNull\(\) should return bool but returns null\.$#'
         -
-            path: %currentWorkingDirectory%/app/Validator/Rule/AlphaDashRule.php
+            path: %currentWorkingDirectory%/app/Validator/Rule/.php
             message: '#^Call to an undefined method object::getMessage\(\)\.$#'
         -
             path: %currentWorkingDirectory%/app/WebSocket/Chat/HomeController.php
