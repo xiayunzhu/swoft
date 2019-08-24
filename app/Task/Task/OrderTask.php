@@ -10,6 +10,7 @@ namespace App\Task\Task;
 
 use App\Model\Entity\Goods;
 use Swoft\Task\Annotation\Mapping\Task;
+use Swoft\Task\Annotation\Mapping\TaskMapping;
 
 /**
  * @Task(name="orders")
@@ -18,6 +19,13 @@ use Swoft\Task\Annotation\Mapping\Task;
  */
 class OrderTask
 {
+    /**
+     * @TaskMapping(name="test")
+     * @param $content
+     * @throws \ReflectionException
+     * @throws \Swoft\Bean\Exception\ContainerException
+     * @throws \Swoft\Db\Exception\DbException
+     */
     public function test($content)
     {
         sleep(3);
