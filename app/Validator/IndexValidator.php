@@ -6,21 +6,21 @@
  * Time: 18:01
  */
 
-namespace App\Validator\Goods;
+namespace App\Validator;
 
 use Swoft\Validator\Annotation\Mapping\IsInt;
 use Swoft\Validator\Annotation\Mapping\Validator;
 
 /**
- *  @Validator()
+ *  @Validator(name="IndexValidator")
  * Class IndexValidator
  * @package App\Validator\Goods
  */
 class IndexValidator
 {
     /**
-     * @IsInt(message="type must Integer")
+     * @IsInt(name="name",message="type must Integer")
      * @var int
      */
-    protected $name = 'defualtName';
+    protected $name ;
 }
