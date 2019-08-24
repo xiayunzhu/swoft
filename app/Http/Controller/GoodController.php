@@ -12,6 +12,7 @@ use Swoft\Bean\BeanFactory;
 use Swoft\Http\Message\Request;
 use Swoft\Http\Server\Annotation\Mapping\Controller;
 use Swoft\Http\Server\Annotation\Mapping\RequestMapping;
+use Swoft\Task\Task;
 use Swoft\Validator\Annotation\Mapping\Validate;
 
 /**
@@ -42,5 +43,14 @@ class GoodController
     {
         $crontab = BeanFactory::getBean("crontab");
         $crontab->execute("test", "firstTask");
+    }
+
+    /**
+     * @throws \Swoft\Task\Exception\TaskException
+     */
+    public function Async()
+    {
+        Task::async("orders", 'test', [12345]);
+        return '异步任务';
     }
 }
