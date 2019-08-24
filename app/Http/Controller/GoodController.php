@@ -8,6 +8,7 @@
 
 namespace App\Http\Controller;
 
+use Swoft\Bean\BeanFactory;
 use Swoft\Http\Message\Request;
 use Swoft\Http\Server\Annotation\Mapping\Controller;
 use Swoft\Http\Server\Annotation\Mapping\RequestMapping;
@@ -32,5 +33,14 @@ class GoodController
     public function index(Request $request)
     {
         return $request->getParsedBody();
+    }
+
+    /**
+     * @RequestMapping()
+     */
+    public function task()
+    {
+        $crontab = BeanFactory::getBean("crontab");
+        $crontab->execute("test", "firstTask");
     }
 }
