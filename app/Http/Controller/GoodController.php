@@ -45,7 +45,8 @@ class GoodController
         $crontab->execute("test", "firstTask");
     }
 
-    /**@RequestMapping(name="async")
+    /**
+     *@RequestMapping()
      * @throws \Swoft\Task\Exception\TaskException
      */
     public function Async()
