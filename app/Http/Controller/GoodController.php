@@ -23,7 +23,7 @@ class GoodController
     /**
      * 验证TestValidator验证器中的所有已定义字段
      *
-     * @RequestMapping()
+     * @RequestMapping
      * @Validate(validator="IndexValidator")
      * @param Request $request
      *
