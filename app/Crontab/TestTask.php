@@ -24,6 +24,6 @@ class TestTask
      */
     public function firstTask()
     {
-        print_r("first task run:%s", date('Y-m-d H:i:s', time()));
+        print_r("first task run:%s".date('Y-m-d H:i:s', time()));
     }
 }
