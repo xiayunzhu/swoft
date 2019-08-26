@@ -24,10 +24,9 @@ class TestExecTimeController
      * @RequestMapping(route="test/{number}")
      *
      * @param int $number
-     *
      * @return array
      */
-    public function factorial(int $number): array
+    public function factorial(int $number)
     {
         $factorial = function ($arg) use (&$factorial) {
             if ($arg == 1) {
